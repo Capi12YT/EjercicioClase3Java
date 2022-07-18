@@ -12,7 +12,7 @@ public class Pelicula {
     
     private Integer codigo;
     private String titulo;
-    private String genero;
+    private Genero genero;
     private Integer rating;
     private String restricion;
 
@@ -26,13 +26,18 @@ public class Pelicula {
         this.titulo = titulo;
     }
 
-    public String getGenero() {
+    public Genero getGenero() {
         return genero;
     }
-
-    public void setGenero(String genero) {
+    
+    public String dameGenero(){
+        return genero.toString();
+    }
+    
+    public void setGenero(Genero genero) {
         this.genero = genero;
     }
+
 
     public Integer getCodigo() {
         return codigo;
@@ -61,7 +66,7 @@ public class Pelicula {
         this.restricion = restricion;
     }
 
-    public Pelicula(Integer codigo, String titulo, String genero, Integer rating, String restricion) {
+    public Pelicula(Integer codigo, String titulo, Genero genero, Integer rating, String restricion) {
         this.codigo = codigo;
         this.titulo = titulo;
         this.genero = genero;

@@ -14,11 +14,11 @@ public class Main {
     public static void main(String[]args){
         
         
-        Pelicula pelicula1 = new Pelicula(1,"Vengadores","Accion",4,"NO");
-        Pelicula pelicula2 = new Pelicula(2,"Tres metros sobre el cielo","Drama",2,"NO");
-        Pelicula pelicula3 = new Pelicula(3,"Old","Terror",1,"SI");
-        Pelicula pelicula4 = new Pelicula(4,"Avatar","Ficcion",5,"NO");
-        Pelicula pelicula5 = new Pelicula(5,"8 apellidos vascos","Comedia",2,"NO");
+        Pelicula pelicula1 = new Pelicula(1,"Vengadores",Genero.ACCION,4,"NO");
+        Pelicula pelicula2 = new Pelicula(2,"Tres metros sobre el cielo",Genero.DRAMA,2,"NO");
+        Pelicula pelicula3 = new Pelicula(3,"Old",Genero.TERROR,2,"SI");
+        Pelicula pelicula4 = new Pelicula(4,"Avatar",Genero.FICCION,5,"NO");
+        Pelicula pelicula5 = new Pelicula(5,"8 apellidos vascos",Genero.COMEDIA,3,"NO");
         
         System.out.println("PELICULAS ALMACENADAS");
         GestionPeliculas.cargarPelicula(pelicula1);

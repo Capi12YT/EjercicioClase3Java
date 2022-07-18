@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class GestionPeliculas {
     
-         static ArrayList<Pelicula> peliculas = new ArrayList<Pelicula>();
+         static ArrayList<Pelicula> peliculas = new ArrayList<>();
          
          public static void cargarPelicula(Pelicula pelicula){
          peliculas.add(pelicula);
@@ -33,7 +33,7 @@ public class GestionPeliculas {
          
          public static void peliculasTerror(){
           for (Pelicula p : peliculas) {
-            if (p.getGenero().equalsIgnoreCase("terror")) {
+            if (p.dameGenero().equalsIgnoreCase("terror")) {
               System.out.println(p.mostrarAtributoPelicula());
             }
           }
